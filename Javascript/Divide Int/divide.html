@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divide integer by another integer</title>
+</head>
+<body>
+    <script>
+        function divide_digit(num,d)
+        {
+            if(d==1)
+                return num;
+            else{
+                while(num%d==0){
+                    num / =d;
+                }
+                return num;
+            }
+        }
+        console.log(divide_digit(-84,4));
+        console.log(divide_digit(10,2));
+        console.log(divide_digit(6,1));
+    </script>
+</body>
+</html>
