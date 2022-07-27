@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserting a num into array using Loop</title>
+</head>
+<body>
+<script>
+  //inserting a number at a specific index into an array
+  function insertElement() {
+    let array = [1, 2, 3, 4];
+    let index = 3;
+    let element = 7;
+    for (let i = array.length; i > index; i--) {
+
+      array[i] = array[i-1];
+    }
+    array[index] = element;
+    document.write(array);
+  }
+  insertElement();
+</script>
+</body>
+</html>

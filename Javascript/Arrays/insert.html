@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserting a num into array</title>
+</head>
+<body>
+<script>
+    //inserting a number at a specific index into an array
+    function insertElement() {
+        let array = [1, 2, 3, 4, 5];
+        let index = 3;
+        let element = 7;
+        array.splice(index, 0, element);
+        document.write(array);
+    }
+
+    insertElement();
+</script>
+</body>
+</html>
