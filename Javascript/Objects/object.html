@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Create Method</title>
+</head>
+<body>
+<script>
+  var Employee = {
+    firstName : 'Hemanth',
+    lastName : 'Kumar',
+    emailId : 'hemanth.p@i95dev.com',
+    age : 22,
+    getFullName : function (){
+      return user.firstName + " " + user.lastName;
+    }
+  }
+
+  var employee1 = Object.create(Employee);
+  document.write('firstName :',  employee1.firstName);
+  document.write('lastName :',  employee1.lastName);
+  document.write('emailId :',  employee1.emailId);
+  document.write('age :',  employee1.age);
+</script>
+</body>
+</html>
